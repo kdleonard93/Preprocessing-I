@@ -159,10 +159,9 @@ header {
   display: flex;
   flex-flow: column wrap;
 }
-.top-section {
+.top-area {
   display: flex;
   flex-flow: column wrap;
-  background-color: #dadada;
 }
 img {
   width: 150px;
@@ -176,6 +175,7 @@ h1 {
 }
 p {
   font-size: 17px;
+  margin: 15px auto;
 }
 h3 {
   margin: 0 auto;
@@ -203,10 +203,11 @@ button:hover {
   background-color: #000000;
   color: #dadada;
 }
-/* Middle Section */
-.mid-section- tr {
+/* Middle Area */
+/* footer */
+tr {
   border: 1px solid red;
 }
-.mid-section- tr td {
+tr td {
   border: 1px solid red;
 }
