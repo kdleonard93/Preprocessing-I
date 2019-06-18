@@ -133,9 +133,80 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Righteous', sans-serif;
 }
-/* Custom CSS*/
+/*Custom CSS starts below*/
 .container {
   width: 800px;
   margin: 0 auto;
+}
+/* Color pallet and Font Family*/
+/* nav and header */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0 20px 0;
+}
+nav a {
+  text-decoration: none;
+  color: rgba(107, 224, 226, 0.9);
+}
+nav a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+header {
+  display: flex;
+  flex-flow: column wrap;
+}
+.top-section {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #dadada;
+}
+img {
+  width: 150px;
+  height: 205px;
+  border-radius: 25%;
+  margin: 5px auto;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 auto;
+}
+p {
+  font-size: 17px;
+}
+h3 {
+  margin: 0 auto;
+  padding: 5px 0 5px 0;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro p {
+  text-align: center;
+}
+button {
+  border: 1px solid black;
+  font-family: 'Righteous', sans-serif;
+  background-color: transparent;
+  font-size: 12px;
+  padding: 5px;
+  margin: 5px auto;
+  border-radius: 10%;
+}
+button:hover {
+  background-color: #000000;
+  color: #dadada;
+}
+/* Middle Section */
+.mid-section- tr {
+  border: 1px solid red;
+}
+.mid-section- tr td {
+  border: 1px solid red;
 }
