@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -136,11 +132,11 @@ body {
   font-family: 'Righteous', sans-serif;
 }
 /*Custom CSS starts below*/
+/* Color pallet and Font Family*/
 .container {
   width: 800px;
   margin: 0 auto;
 }
-/* Color pallet and Font Family*/
 /* nav and header */
 nav {
   display: flex;
@@ -151,6 +147,13 @@ nav a {
   text-decoration: none;
   color: rgba(107, 224, 226, 0.9);
 }
+@media (max-width: 800px) {
+  nav a {
+    display: flex;
+    justify-content: space-evenly;
+    color: goldenrod;
+  }
+}
 nav a:hover {
   color: goldenrod;
   text-decoration: underline;
@@ -159,25 +162,25 @@ header {
   display: flex;
   flex-flow: column wrap;
 }
-.top-area {
-  display: flex;
-  flex-flow: column wrap;
-}
-img {
+header img {
   width: 150px;
   height: 205px;
   border-radius: 25%;
   margin: 5px auto;
 }
-h1 {
+.top-area {
+  display: flex;
+  flex-flow: column wrap;
+}
+.top-area h1 {
   font-size: 30px;
   margin: 0 auto;
 }
-p {
+.top-area p {
   font-size: 17px;
   margin: 15px auto;
 }
-h3 {
+.top-area h3 {
   margin: 0 auto;
   padding: 5px 0 5px 0;
 }
@@ -187,10 +190,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.intro p {
-  text-align: center;
-}
-button {
+.intro button {
   border: 1px solid black;
   font-family: 'Righteous', sans-serif;
   background-color: transparent;
@@ -199,15 +199,38 @@ button {
   margin: 5px auto;
   border-radius: 10%;
 }
+.intro p {
+  text-align: center;
+}
 button:hover {
   background-color: #000000;
   color: #dadada;
 }
 /* Middle Area */
-/* footer */
-tr {
-  border: 1px solid red;
+.mid-area {
+  margin: 10px auto;
 }
-tr td {
-  border: 1px solid red;
+.mid-area section {
+  margin: 10px auto;
+}
+.mid-area h2 {
+  margin: 10px auto;
+}
+.mid-area h2 span {
+  text-decoration: underline;
+}
+.mid-area li {
+  list-style-type: circle;
+}
+/* footer */
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, #c67700 0%, rgba(107, 224, 226, 0.1) 70%);
+}
+@media (max-width: 800px) {
+  table {
+    background-image: linear-gradient(90deg, #68ce6d 0%, rgba(32, 58, 202, 0.1) 70%);
+  }
 }
