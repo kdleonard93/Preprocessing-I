@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -133,9 +129,108 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Righteous', sans-serif;
 }
-/* Custom CSS*/
+/*Custom CSS starts below*/
+/* Color pallet and Font Family*/
 .container {
   width: 800px;
   margin: 0 auto;
+}
+/* nav and header */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0 20px 0;
+}
+nav a {
+  text-decoration: none;
+  color: rgba(107, 224, 226, 0.9);
+}
+@media (max-width: 800px) {
+  nav a {
+    display: flex;
+    justify-content: space-evenly;
+    color: goldenrod;
+  }
+}
+nav a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+header {
+  display: flex;
+  flex-flow: column wrap;
+}
+header img {
+  width: 150px;
+  height: 205px;
+  border-radius: 25%;
+  margin: 5px auto;
+}
+.top-area {
+  display: flex;
+  flex-flow: column wrap;
+}
+.top-area h1 {
+  font-size: 30px;
+  margin: 0 auto;
+}
+.top-area p {
+  font-size: 17px;
+  margin: 15px auto;
+}
+.top-area h3 {
+  margin: 0 auto;
+  padding: 5px 0 5px 0;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro button {
+  border: 1px solid black;
+  font-family: 'Righteous', sans-serif;
+  background-color: transparent;
+  font-size: 12px;
+  padding: 5px;
+  margin: 5px auto;
+  border-radius: 10%;
+}
+.intro p {
+  text-align: center;
+}
+button:hover {
+  background-color: #000000;
+  color: #dadada;
+}
+/* Middle Area */
+.mid-area {
+  margin: 10px auto;
+}
+.mid-area section {
+  margin: 10px auto;
+}
+.mid-area h2 {
+  margin: 10px auto;
+}
+.mid-area h2 span {
+  text-decoration: underline;
+}
+.mid-area li {
+  list-style-type: circle;
+}
+/* footer */
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, #c67700 0%, rgba(107, 224, 226, 0.1) 70%);
+}
+@media (max-width: 800px) {
+  table {
+    background-image: linear-gradient(90deg, #68ce6d 0%, rgba(32, 58, 202, 0.1) 70%);
+  }
 }
